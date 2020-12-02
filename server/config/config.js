@@ -7,7 +7,24 @@ process.env.PORT = process.env.PORT || 3000;
 //==============================
 //Entorno
 //==============================
-process.env.ENV = process.env.ENV || 'dev';
+process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
+
+
+
+//==============================
+//Vencimiento del Token
+//==============================
+//60 s
+//60 m
+//24 h
+//30 days
+process.env.TOKEN_EXPIRES = 60 * 60 * 24 * 30;
+
+
+//==============================
+//SEED de autenticación
+//==============================
+process.env.SEED = process.env.SEED || 'dev-secret';
 
 
 //==============================

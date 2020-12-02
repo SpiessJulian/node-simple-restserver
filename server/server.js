@@ -1,4 +1,5 @@
 require('./config/config');
+
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
@@ -11,7 +12,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 
-app.use(require('./routes/users'));
+//Routes Config
+app.use(require('./routes/index'));
 
 mongoose.connect(process.env.URLDB, {
     useNewUrlParser: true,
