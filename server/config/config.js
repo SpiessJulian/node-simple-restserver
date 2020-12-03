@@ -28,6 +28,11 @@ process.env.SEED = process.env.SEED || 'dev-secret';
 
 
 //==============================
+//Google Client ID
+//==============================
+process.env.CLIENT_ID = process.env.CLIENT_ID || "279924627991-92r2hafv2e343b6gs2a5ibg08fj984cf.apps.googleusercontent.com";
+
+//==============================
 //DB
 //==============================
 let urlDB;
